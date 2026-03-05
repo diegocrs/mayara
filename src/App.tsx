@@ -176,12 +176,12 @@ export default function App() {
                 <ImageComparisonImage
                   src="https://i.imgur.com/f6rztSV.jpeg?q=80&w=1000&auto=format&fit=crop"
                   className="brightness-90"
-                  alt="Antes"
+                  alt="Depois"
                   position="left"
                 />
                 <ImageComparisonImage
                   src="https://i.imgur.com/D1QXFXR.jpeg?q=80&w=1000&auto=format&fit=crop"
-                  alt="Depois"
+                  alt="Antes"
                   position="right"
                 />
                 <ImageComparisonSlider className="w-1 bg-brand-green">
