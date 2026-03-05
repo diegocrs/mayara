@@ -14,15 +14,31 @@ const Logo = () => (
   </div>
 );
 
-const Button = ({ children, className = "", variant = "primary" }: { children: React.ReactNode, className?: string, variant?: "primary" | "secondary" }) => {
+const Button = ({ children, className = "", variant = "primary", onClick, href }: { children: React.ReactNode, className?: string, variant?: "primary" | "secondary", onClick?: () => void, href?: string }) => {
   const baseStyles = "w-full py-4 px-8 rounded-lg font-display font-bold text-lg transition-all duration-300 active:scale-95 shadow-lg flex items-center justify-center gap-2";
   const variants = {
     primary: "bg-brand-dark text-white hover:bg-black",
     secondary: "bg-brand-green text-white hover:bg-brand-green/90",
   };
 
+  if (href) {
+    return (
+      <a 
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${baseStyles} ${variants[variant]} ${className}`}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <button className={`${baseStyles} ${variants[variant]} ${className}`}>
+    <button 
+      onClick={onClick}
+      className={`${baseStyles} ${variants[variant]} ${className}`}
+    >
       {children}
     </button>
   );
@@ -76,7 +92,9 @@ export default function App() {
             <p className="mt-2 text-lg font-bold text-brand-dark">Comece hoje.</p>
             
             <div className="mt-10 max-w-sm mx-auto lg:mx-0">
-              <Button>Quero transformar agora</Button>
+              <Button href="https://pay.herospark.com/desafio-do-abs-e-cardio-by-mayara-508365">
+                Quero transformar agora
+              </Button>
             </div>
           </div>
         </motion.div>
@@ -248,7 +266,7 @@ export default function App() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 px-6 text-center max-w-4xl mx-auto">
+      <section id="pricing" className="py-24 px-6 text-center max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -271,7 +289,10 @@ export default function App() {
           </div>
 
           <div className="max-w-md mx-auto">
-            <Button className="mb-6 group">
+            <Button 
+              href="https://pay.herospark.com/desafio-do-abs-e-cardio-by-mayara-508365"
+              className="mb-6 group"
+            >
               Garantir meu acesso
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
