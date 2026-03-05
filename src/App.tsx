@@ -6,6 +6,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Check, Clock, Target, Zap, Heart, ArrowRight, ShieldCheck } from "lucide-react";
+import { ImageComparison, ImageComparisonImage, ImageComparisonSlider } from "./components/ui/image-comparison";
 
 const Logo = () => (
   <div className="flex items-center justify-center lg:justify-start gap-1 font-display font-extrabold text-xl tracking-tighter">
@@ -155,8 +156,54 @@ export default function App() {
         </div>
       </section>
 
+      {/* Before & After Section */}
+      <section className="pt-24 pb-12 px-6 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-brand-dark mb-4">
+              Resultados Reais
+            </h2>
+            <p className="text-lg text-brand-dark/60 mb-12">
+              Veja a transformação de quem já aplicou o método.
+            </p>
+            
+            <div className="max-w-md mx-auto">
+              <ImageComparison className="aspect-[4/5] w-full rounded-3xl shadow-2xl border-4 border-white" enableHover>
+                <ImageComparisonImage
+                  src="?q=80&w=1000&auto=format&fit=crop"
+                  className="brightness-90"
+                  alt="Antes"
+                  position="left"
+                />
+                <ImageComparisonImage
+                  src="https://i.imgur.com/D1QXFXR.jpeg?q=80&w=1000&auto=format&fit=crop"
+                  alt="Depois"
+                  position="right"
+                />
+                <ImageComparisonSlider className="w-1 bg-brand-green">
+                  <div className="absolute top-1/2 left-1/2 size-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-green shadow-xl flex items-center justify-center border-2 border-white">
+                    <div className="flex gap-0.5">
+                      <div className="w-1 h-4 bg-white rounded-full"></div>
+                      <div className="w-1 h-4 bg-white rounded-full"></div>
+                    </div>
+                  </div>
+                </ImageComparisonSlider>
+              </ImageComparison>
+              <div className="mt-6 flex justify-between text-sm font-bold text-brand-dark/40 uppercase tracking-widest">
+                <span>Antes</span>
+                <span>Depois</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* The Method Section */}
-      <section className="py-24 px-6 max-w-4xl mx-auto text-center">
+      <section className="pt-12 pb-24 px-6 max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
