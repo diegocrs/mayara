@@ -177,7 +177,7 @@ export default function App() {
             className="mt-12"
           >
             <img 
-              src="https://imgur.com/TGs7lei?q=80&w=1000&auto=format&fit=crop" 
+              src="https://imgur.com/TGs7lei" 
               alt="Training results" 
               className="rounded-3xl shadow-xl mx-auto max-w-full lg:max-w-2xl"
               referrerPolicy="no-referrer"
@@ -225,7 +225,7 @@ export default function App() {
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img 
-            src="https://imgur.com/TGs7lei?q=80&w=1920&auto=format&fit=crop" 
+            src="https://imgur.com/TGs7lei" 
             alt="Background" 
             className="w-full h-full object-cover opacity-10 grayscale"
             referrerPolicy="no-referrer"
@@ -267,7 +267,7 @@ export default function App() {
             className="mt-16 lg:mt-0 hidden lg:block"
           >
             <img 
-              src="https://imgur.com/TGs7lei?q=80&w=1000&auto=format&fit=crop" 
+              src="https://imgur.com/TGs7lei" 
               alt="Workout" 
               className="rounded-3xl shadow-2xl"
               referrerPolicy="no-referrer"
