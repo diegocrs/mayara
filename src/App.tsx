@@ -194,8 +194,8 @@ export default function App() {
                 </ImageComparisonSlider>
               </ImageComparison>
               <div className="mt-6 flex justify-between text-sm font-bold text-brand-dark/40 uppercase tracking-widest">
-                <span>Antes</span>
                 <span>Depois</span>
+                <span>Antes</span>
               </div>
             </div>
           </motion.div>
