@@ -174,7 +174,7 @@ export default function App() {
             <div className="max-w-md mx-auto">
               <ImageComparison className="aspect-[4/5] w-full rounded-3xl shadow-2xl border-4 border-white" enableHover>
                 <ImageComparisonImage
-                  src="?q=80&w=1000&auto=format&fit=crop"
+                  src="https://i.imgur.com/f6rztSV.jpeg?q=80&w=1000&auto=format&fit=crop"
                   className="brightness-90"
                   alt="Antes"
                   position="left"
