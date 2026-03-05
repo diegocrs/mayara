@@ -57,12 +57,10 @@ export default function App() {
         >
           <Logo />
           
-          <h1 className="mt-12 text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-brand-dark">
-            <span className="block lg:inline">Eu</span>
-            <span className="block lg:inline lg:ml-3">transformei</span> <br className="hidden lg:block" />
-            <span className="text-brand-green block lg:inline">minha vida.</span> <br className="hidden lg:block" />
-            <span className="block lg:inline">Agora é a sua</span>
-            <span className="block lg:inline lg:ml-3">vez.</span>
+          <h1 className="mt-12 text-[33px] lg:text-[50px] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
+            <span className="block">Eu transformei</span>
+            <span className="text-brand-green block">minha vida.</span>
+            <span className="block">Agora é a sua vez.</span>
           </h1>
 
           {/* Photo for Mobile - Appears right after headline */}
