@@ -106,7 +106,7 @@ export default function App() {
         >
           <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative max-w-md mx-auto">
             <img 
-              src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop" 
+              src="https://i.imgur.com/0Mw0f1V.png" 
               alt="Mayara Santos Training" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -170,6 +170,19 @@ export default function App() {
             treinos de abdômen e cardio que encaixam na sua rotina e entregam resultados visíveis. 
             Sem enrolação.
           </p>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
+            <img 
+              src="https://imgur.com/TGs7lei?q=80&w=1000&auto=format&fit=crop" 
+              alt="Training results" 
+              className="rounded-3xl shadow-xl mx-auto max-w-full lg:max-w-2xl"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
         </motion.div>
       </section>
 
@@ -212,7 +225,7 @@ export default function App() {
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img 
-            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1920&auto=format&fit=crop" 
+            src="https://imgur.com/TGs7lei?q=80&w=1920&auto=format&fit=crop" 
             alt="Background" 
             className="w-full h-full object-cover opacity-10 grayscale"
             referrerPolicy="no-referrer"
@@ -254,7 +267,7 @@ export default function App() {
             className="mt-16 lg:mt-0 hidden lg:block"
           >
             <img 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop" 
+              src="https://imgur.com/TGs7lei?q=80&w=1000&auto=format&fit=crop" 
               alt="Workout" 
               className="rounded-3xl shadow-2xl"
               referrerPolicy="no-referrer"
