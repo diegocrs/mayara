@@ -74,7 +74,7 @@ export default function App() {
           >
             <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative max-w-sm mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop" 
+                src="https://i.imgur.com/0Mw0f1V.png" 
                 alt="Mayara Santos Training" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
